@@ -12,7 +12,7 @@ st.title("Elephant Image - Multi-Color Channel Visualizer")
 # ✅ Corrected: Load image from local path
 @st.cache_data
 def load_image():
-    image_path = "C:/Users/mirza/Desktop/naveed photos/5.jpg"  # use forward slashes or raw string
+    image_path = r"C:/Users/mirza/Desktop/naveed photos/5.jpg"  # use forward slashes or raw string
     image = Image.open(image_path)
     return image
 
@@ -66,3 +66,4 @@ plt.axis("off")
 # Display plot in Streamlit
 st.pyplot(fig)
 # Display the plot
+
